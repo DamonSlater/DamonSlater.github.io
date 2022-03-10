@@ -11459,6 +11459,7 @@ textarea.form-control-lg {
   height: 100%;
   margin: 0;
   display: flex;
+  text-align: center;
 }
 
 .card-front {
@@ -11487,4 +11488,15 @@ textarea.form-control-lg {
 .card-award-img {
   height: 100px;
   display: inline-block;
+  text-align: center;
+}
+
+.category-card {
+  -webkit-box-shadow: 1px 3px 15px 3px rgba(0,0,0,0.17); 
+  box-shadow: 1px 3px 15px 3px rgba(0,0,0,0.17);
+  border-width: 0px !important;
+}
+
+.category-section {
+  margin-top: 30px;
 }
