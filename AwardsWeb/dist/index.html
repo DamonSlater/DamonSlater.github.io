@@ -10,8 +10,9 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- Font Awesome -->
+        <!--  Kits -->
         <script src="https://kit.fontawesome.com/33075be1b7.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Font Declaration -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +38,7 @@
             <div class="row gx-4 gx-lg-5 align-items-center my-5">
                 <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg" alt="..." /></div>
                 <div class="col-lg-5">
-                    <h1 class="font-weight-light csi-title"><i class="fa-solid fa-award"></i> CSI Awards</h1>
+                            <h1 class="font-weight-light csi-title"><i class="fa-solid fa-award"></i> CSI Awards</h1>
                     <p class="csi-txt">These new fun and informal CSI Awards have been created as a way of recognising and rewarding colleagues within the Continual Service Improvement team, and hopefully helping to bring some of our diverse work areas a little closer together, creating wider engagement and connection opportunities.  
 
                         <br><br>We have created them in such a way that hopefully everyone will have the opportunity to be involved, nominate colleagues and vote on the amazing shortlisted candidates.  They’ll be some fun prizes for winners and of course a wall of fame to recognise their valuable contributions and colleague appreciation.  I do hope that you’ll all take the time to join in, as I can’t wait to read all the nominations and have the opportunity to learn more about everyone.
@@ -69,7 +70,9 @@
                 </div>
             </div>
             <!-- Content Row-->
-            <button onclick="DisplayOnClick()">Click me</button>
+            <h2 class="font-weight-light csi-title">Helping Hands</h2>
+            <button class="btn btn-primary btn-sm sh-button" id="hh-hide" href="#!">Hide/show nominees</button>
+
             <div class="row gx-4 gx-lg-5 d-flex justify-content-center">
                 <div class="col-md-4 mb-5">
                     <div id="hh-card1" class="card h-100 csi-full-card hh-card">
@@ -101,69 +104,225 @@
                         <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100 csi-full-card">
-                        <div class="card-body csi-card">
-                            <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/gZZjktC/mademyday.png"></div>
-                            <h2 class="card-title">Makes My Day</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+            </div>
+
+                <h2 class="font-weight-light csi-title">Makes My Day</h2>
+                <button class="btn btn-primary btn-sm sh-button" id="mmd-hide" href="#!">Hide/show nominees</button>
+
+                <div class="row gx-4 gx-lg-5 d-flex justify-content-center">
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card mmd-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/gZZjktC/mademyday.png"></div>
+                                <h2 class="card-title">Makes My Day</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card mmd-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/gZZjktC/mademyday.png"></div>
+                                <h2 class="card-title">Makes My Day</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card mmd-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/gZZjktC/mademyday.png"></div>
+                                <h2 class="card-title">Makes My Day</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100 csi-full-card">
-                        <div class="card-body csi-card">
-                            <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/M7YRNRv/Rolemodel.png"></div>
-                            <h2 class="card-title">Role Model</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+
+                <h2 class="font-weight-light csi-title">Role Model</h2>
+                <button class="btn btn-primary btn-sm sh-button" id="rm-hide" href="#!">Hide/show nominees</button>
+
+                    <div class="row gx-4 gx-lg-5 d-flex justify-content-center">
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100 csi-full-card rm-card">
+                                <div class="card-body csi-card">
+                                    <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/M7YRNRv/Rolemodel.png"></div>
+                                    <h2 class="card-title">Role Model</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                            </div>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100 csi-full-card rm-card">
+                                <div class="card-body csi-card">
+                                    <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/M7YRNRv/Rolemodel.png"></div>
+                                    <h2 class="card-title">Role Model</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5">
+                            <div class="card h-100 csi-full-card rm-card">
+                                <div class="card-body csi-card">
+                                    <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/M7YRNRv/Rolemodel.png"></div>
+                                    <h2 class="card-title">Role Model</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                                </div>
+                                <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                <h2 class="font-weight-light csi-title">Amazing New Addition</h2>
+                <button class="btn btn-primary btn-sm sh-button" id="aaa-hide" href="#!">Hide/show nominees</button>
+
+                <div class="row gx-4 gx-lg-5 d-flex justify-content-center">
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card aaa-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/Twyw7Yn/newaddition.png"></div>
+                                <h2 class="card-title">Amazing New Addition</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card aaa-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/Twyw7Yn/newaddition.png"></div>
+                                <h2 class="card-title">Amazing New Addition</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card aaa-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/Twyw7Yn/newaddition.png"></div>
+                                <h2 class="card-title">Amazing New Addition</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100 csi-full-card">
-                        <div class="card-body csi-card">
-                            <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/Twyw7Yn/newaddition.png"></div>
-                            <h2 class="card-title">Amazing New Addition</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+
+                <h2 class="font-weight-light csi-title">Google</h2>
+                <button class="btn btn-primary btn-sm sh-button" id="go-hide" href="#!">Hide/show nominees</button>
+
+                <div class="row gx-4 gx-lg-5 d-flex justify-content-center">
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card go-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/1z1w4py/google.png"></div>
+                                <h2 class="card-title">Google</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card go-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/1z1w4py/google.png"></div>
+                                <h2 class="card-title">Google</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card go-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/1z1w4py/google.png"></div>
+                                <h2 class="card-title">Google</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100 csi-full-card">
-                        <div class="card-body csi-card">
-                            <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/1z1w4py/google.png"></div>
-                            <h2 class="card-title">Google</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+
+                <h2 class="font-weight-light csi-title">Duct Tape</h2>
+                <button class="btn btn-primary btn-sm sh-button" id="dt-hide" href="#!">Hide/show nominees</button>
+
+                <div class="row gx-4 gx-lg-5 d-flex justify-content-center">
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card dt-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/mFN744L/ductape.png"></div>
+                                <h2 class="card-title">Duct Tape</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card dt-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/mFN744L/ductape.png"></div>
+                                <h2 class="card-title">Duct Tape</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card dt-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/mFN744L/ductape.png"></div>
+                                <h2 class="card-title">Duct Tape</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100 csi-full-card">
-                        <div class="card-body csi-card">
-                            <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/mFN744L/ductape.png"></div>
-                            <h2 class="card-title">Duct Tape</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+
+                <h2 class="font-weight-light csi-title">Customer Hero</h2>
+                <button class="btn btn-primary btn-sm sh-button" id="ch-hide" href="#!">Hide/show nominees</button>
+            
+                <div class="row gx-4 gx-lg-5 d-flex justify-content-center">
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card ch-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/KN5rbfq/hero.png"></div>
+                                <h2 class="card-title">Customer Hero</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100 csi-full-card">
-                        <div class="card-body csi-card">
-                            <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/KN5rbfq/hero.png"></div>
-                            <h2 class="card-title">Customer Hero</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card ch-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/KN5rbfq/hero.png"></div>
+                                <h2 class="card-title">Customer Hero</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card h-100 csi-full-card ch-card">
+                            <div class="card-body csi-card">
+                                <div class="icon-box"><img class="icon-box-img" src="https://i.ibb.co/KN5rbfq/hero.png"></div>
+                                <h2 class="card-title">Customer Hero</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                            </div>
+                            <div class="card-footer"><a class="btn btn-primary btn-sm csi-btn" href="#!">Vote</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
         <!-- Footer-->
         <footer class="py-3 bg-dark">
@@ -175,3 +334,47 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+
+<script>
+    $(document).ready(function(){
+    $("#hh-hide").click(function(){
+        $(".hh-card").toggle();
+    });
+    });
+
+    $(document).ready(function(){
+    $("#mmd-hide").click(function(){
+        $(".mmd-card").toggle();
+    });
+    });
+
+    $(document).ready(function(){
+    $("#rm-hide").click(function(){
+        $(".rm-card").toggle();
+    });
+    });
+
+    $(document).ready(function(){
+    $("#aaa-hide").click(function(){
+        $(".aaa-card").toggle();
+    });
+    });
+
+    $(document).ready(function(){
+    $("#go-hide").click(function(){
+        $(".go-card").toggle();
+    });
+    });
+
+    $(document).ready(function(){
+    $("#dt-hide").click(function(){
+        $(".dt-card").toggle();
+    });
+    });
+
+    $(document).ready(function(){
+    $("#ch-hide").click(function(){
+        $(".ch-card").toggle();
+    });
+    });
+</script>

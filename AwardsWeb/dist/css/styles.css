@@ -11406,9 +11406,8 @@ textarea.form-control-lg {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   background: #3B96FF;
-  background: -webkit-linear-gradient(to right, #3B96FF 0%, #D342FF 100%);
-  background: -moz-linear-gradient(to right, #3B96FF 0%, #D342FF 100%);
-  background: linear-gradient(to right, #3B96FF 0%, #D342FF 100%);
+  background: rgb(0,82,255);
+  background: linear-gradient(90deg, rgba(0,82,255,1) 24%, rgba(196,0,255,1) 49%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -11499,4 +11498,13 @@ textarea.form-control-lg {
 
 .category-section {
   margin-top: 30px;
+}
+
+.hh-card:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sh-button {
+  margin-bottom: 15px;
+  width: 150px;
 }
